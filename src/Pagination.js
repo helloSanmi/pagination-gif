@@ -13,7 +13,7 @@ const Pagination = ({ totalPosts, postPerPage, setCurrentPage, currentPage }) =>
             {
                 pages?.map((page, index) => <button key={index} 
                     onMouseMoveCapture={() => setCurrentPage(page)} 
-                        className={page == currentPage ? 'active' : ''}>{page}</button>)
+                        className={page === currentPage ? 'active' : ''}>{page}</button>)
             }
         </div>
     )

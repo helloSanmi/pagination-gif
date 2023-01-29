@@ -7,7 +7,7 @@ import Pagination from './Pagination';
 const App = () => {
   const [coinsData, setCoinsData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(8);
+  let postPerPage = 8;
 
   useEffect(() => {
     const loadData = async () => {
